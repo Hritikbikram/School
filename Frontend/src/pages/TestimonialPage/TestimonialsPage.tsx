@@ -22,7 +22,7 @@ const testimonialsPage = [
     {
         name: "Guardian",
         position: "Parent",
-        image: "https://i.pravatar.cc/100?img=50",
+        image: "https://i.pravatar.cc/100?img=32",
         message: "Very satisfied with school environment and teaching quality.",
     },
 ];

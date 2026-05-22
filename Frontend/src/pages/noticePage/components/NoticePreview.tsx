@@ -4,11 +4,11 @@ import NoticeCard from "./NoticeCard";
 const notices = [
     {
         title: "Exam Routine Released",
-        image: "https://images.unsplash.com/photo-1588072432836-e10032774350",
+        image: "https://images.unsplash.com/photo-1529209076408-5a115ec9f1c6?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         title: "Admission Open 2026",
-        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+        image: "https://images.unsplash.com/photo-1727947248592-77b80a8d3a3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         title: "Sports Week Announcement",
