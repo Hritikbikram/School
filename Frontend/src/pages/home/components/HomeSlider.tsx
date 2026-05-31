@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
+import pic1 from "../../../assets/Pic1.jpg";
+import pic2 from "../../../assets/Pic2.jpg";
+import pic3 from "../../../assets/Pic3.jpg";
+import pic4 from "../../../assets/Pic4.jpg";
 
-const images = [
-    "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-    "https://images.unsplash.com/photo-1501349800519-48093d60bde0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
+const images = [pic1, pic2, pic3, pic4];
 
 export default function HomeSlider() {
     const [current, setCurrent] = useState(0);

@@ -1,8 +1,9 @@
-const images = [
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1727947248592-77b80a8d3a3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
-];
+import pic1 from "../../assets/Pic1.jpg";
+import pic2 from "../../assets/Pic2.jpg";
+import pic3 from "../../assets/Pic3.jpg";
+import pic4 from "../../assets/Pic4.jpg";
+
+const images = [pic1, pic2, pic3, pic4];
 
 export default function GalleryPage() {
     return (
