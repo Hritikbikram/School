@@ -2,52 +2,62 @@ import HomeSlider from "./components/HomeSlider.tsx";
 import {Box} from "@mui/material";
 import TeamCard from "../teamPage/TeamCard.tsx";
 import {Link} from "react-router-dom";
-import TestimonialsSlider from "../TestimonialPage/components/TestimonialSlider.tsx";
 import NoticesPreview from "../noticePage/components/NoticePreview.tsx";
 import EventsPreview from "../eventPage/components/EventPreview.tsx";
 
 const teamMembers = [
-    {name: "Dr. Sita Sharma", position: "Principal", image: "https://i.pravatar.cc/300?img=47"},
-    {name: "Ram Bahadur", position: "Vice Principal", image: "https://i.pravatar.cc/300?img=12"},
-    {name: "Anita Koirala", position: "Science Teacher", image: "https://i.pravatar.cc/300?img=25"},
-    {name: "Suresh Yadav", position: "Math Teacher", image: "https://i.pravatar.cc/300?img=33"},
+    {
+        name: "राम बहादुर थापा",
+        position: "प्रधानाध्यापक",
+        phone: "९८५८०५०६१३",
+        image: "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
+    },
+    {
+        name: "मनसुन दाहाल",
+        position: "९–१२ कृषि कार्यक्रम संयोजक",
+        phone: "९८४८१००३०४",
+        image: "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
+    },
 ];
-
 
 export default function HomePage() {
     return (
         <section className="mx-auto max-w-7xl px-4 py-10">
+
+            {/* HERO SLIDER */}
             <HomeSlider/>
-            <Box className="my-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+
+            {/* TESTIMONIALS + UPDATES */}
+            <Box className="my-6 grid grid-cols-1 md:grid-cols-1 gap-6 items-stretch">
 
                 {/* LEFT - TESTIMONIALS */}
                 <div>
-                    <TestimonialsSlider/>
+                    {/* <TestimonialsSlider/> */}
                 </div>
 
-                {/* RIGHT - INFO PANEL */}
+                {/* RIGHT - UPDATES PANEL */}
                 <div className="bg-white shadow-md rounded-xl p-6 border">
 
                     <h2 className="text-lg font-bold text-gray-800 mb-4">
-                        Latest Updates
+                        नवीनतम अपडेटहरू
                     </h2>
 
                     <div className="space-y-4 text-sm text-gray-700">
 
                         <div className="p-3 bg-blue-50 rounded-md">
-                            📢 Admission Open for 2026 Session
+                            📢 २०२६ शैक्षिक सत्रका लागि भर्ना खुला
                         </div>
 
                         <div className="p-3 bg-gray-50 rounded-md">
-                            🏫 Classes from Nursery to Grade 10
+                            🏫 नर्सरी देखि कक्षा १० सम्म अध्ययन सुविधा
                         </div>
 
                         <div className="p-3 bg-gray-50 rounded-md">
-                            📅 Annual Sports Week coming soon
+                            📅 वार्षिक खेलकुद सप्ताह चाँडै हुँदैछ
                         </div>
 
                         <div className="p-3 bg-gray-50 rounded-md">
-                            📞 Contact: 9812345678
+                            📞 सम्पर्क: ९८१२३४५६७८
                         </div>
 
                     </div>
@@ -55,28 +65,40 @@ export default function HomePage() {
                 </div>
 
             </Box>
+
+            {/* NOTICES */}
             <NoticesPreview/>
 
+            {/* EVENTS */}
             <EventsPreview/>
 
-            {/* TEAM PREVIEW SECTION */}
+            {/* TEAM PREVIEW */}
             <div className="mt-12">
-                <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-xl font-bold text-gray-800">School Team</h2>
 
-                    <Link to="/team"
-                          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 ">
-                        View All →
+                <div className="flex justify-between items-center mb-6">
+
+                    <h2 className="text-xl font-bold text-gray-800">
+                        विद्यालय टोली
+                    </h2>
+
+                    <Link
+                        to="/team"
+                        className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition"
+                    >
+                        सबै हेर्नुहोस् →
                     </Link>
+
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
                     {teamMembers.slice(0, 3).map((member, index) => (
                         <TeamCard key={index} member={member}/>
                     ))}
-                </div>
-            </div>
 
+                </div>
+
+            </div>
 
         </section>
     );

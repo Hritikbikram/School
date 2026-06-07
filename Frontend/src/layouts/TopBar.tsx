@@ -26,17 +26,16 @@ export default function TopBar() {
 
                 {/* RIGHT - Quick links */}
                 <div className="flex items-center gap-5 text-xs">
-
                     <Link to="/admission" className="hover:text-gray-300 transition">
-                        Admission
+                        भर्ना
                     </Link>
 
                     <Link to="/calendar" className="hover:text-gray-300 transition">
-                        Academic Calendar
+                        शैक्षिक पात्रो
                     </Link>
 
                     <Link to="/notices" className="hover:text-gray-300 transition">
-                        Notices
+                        सूचना
                     </Link>
 
                 </div>

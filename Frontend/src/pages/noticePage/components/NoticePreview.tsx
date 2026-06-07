@@ -1,24 +1,26 @@
 import {Link} from "react-router-dom";
 import NoticeCard from "./NoticeCard";
 
+
 const notices = [
     {
-        title: "Exam Routine Released",
+        title: "वार्षिक परीक्षाको तालिका प्रकाशित",
         image: "https://images.unsplash.com/photo-1529209076408-5a115ec9f1c6?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Admission Open 2026",
+        title: "शैक्षिक सत्र २०८३ को भर्ना खुला",
         image: "https://images.unsplash.com/photo-1727947248592-77b80a8d3a3a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "Sports Week Announcement",
+        title: "खेलकुद सप्ताह सम्बन्धी सूचना",
         image: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d",
     },
     {
-        title: "Holiday Notice",
+        title: "सार्वजनिक बिदा सम्बन्धी सूचना",
         image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
     },
 ];
+
 
 export default function NoticesPreview() {
     return (
@@ -28,14 +30,14 @@ export default function NoticesPreview() {
                 {/* HEADER */}
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-xl font-bold text-gray-800">
-                        Latest Notices
+                        सूचनाहरू
                     </h2>
 
                     <Link
                         to="/notices"
                         className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 "
                     >
-                        View All →
+                        सबै हेर्नुहोस् →
                     </Link>
                 </div>
 
