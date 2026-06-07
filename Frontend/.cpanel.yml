@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/shreejwalasec/public_html/
+    - cd FRONTEND
     - npm install
     - npm run build
-    - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp -R dist/* /home/shreejwalasec/public_html/
