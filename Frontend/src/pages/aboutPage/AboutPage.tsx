@@ -1,5 +1,8 @@
 import pic1 from '../../assets/Pic1.jpg';
 import pic2 from '../../assets/Pic2.jpg';
+import AgricultureIcon from "@mui/icons-material/Agriculture";
+import {Business, ChildCare, Flight, SportsVolleyball, Work} from "@mui/icons-material";
+import SchoolIcon from "@mui/icons-material/School";
 
 export default function AboutPage() {
     const history = [
@@ -49,19 +52,19 @@ export default function AboutPage() {
 
     const programs = [
         {
-            icon: "👶",
+            icon: <ChildCare sx={{fontSize: 55}} className="text-pink-600"/>,
             title: "बाल विकास",
         },
         {
-            icon: "📚",
+            icon: <SchoolIcon sx={{fontSize: 55}} className="text-blue-600"/>,
             title: "औपचारिक शिक्षा",
         },
         {
-            icon: "🌾",
+            icon: <AgricultureIcon sx={{fontSize: 55}} className="text-green-600"/>,
             title: "बाली विज्ञान",
         },
         {
-            icon: "⚽",
+            icon: <SportsVolleyball sx={{fontSize: 55}} className="text-orange-600"/>,
             title: "सहक्रियाकलाप",
         },
     ];
@@ -263,25 +266,35 @@ export default function AboutPage() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
                         <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                            <div className="text-5xl mb-3">👨‍🌾</div>
+                            <AgricultureIcon
+                                sx={{fontSize: 55}}
+                                className="text-green-600 mb-3"
+                            />
                             <h3 className="font-semibold">कृषि</h3>
                         </div>
 
                         <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                            <div className="text-5xl mb-3">🏪</div>
+                            <Business
+                                sx={{fontSize: 55}}
+                                className="text-blue-600 mb-3"
+                            />
                             <h3 className="font-semibold">व्यापार</h3>
                         </div>
 
                         <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                            <div className="text-5xl mb-3">💼</div>
+                            <Work
+                                sx={{fontSize: 55}}
+                                className="text-orange-600 mb-3"
+                            />
                             <h3 className="font-semibold">रोजगारी</h3>
                         </div>
 
                         <div className="bg-white p-6 rounded-2xl text-center shadow-sm">
-                            <div className="text-5xl mb-3">✈️</div>
-                            <h3 className="font-semibold">
-                                वैदेशिक रोजगार
-                            </h3>
+                            <Flight
+                                sx={{fontSize: 55}}
+                                className="text-purple-600 mb-3"
+                            />
+                            <h3 className="font-semibold">वैदेशिक रोजगार</h3>
                         </div>
 
                     </div>

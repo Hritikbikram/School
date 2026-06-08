@@ -1,15 +1,26 @@
+import principal from "../../assets/principal.jpeg"
+import agriculture from "../../assets/agriculture.jpg"
+import accounting from "../../assets/accounting.jpg"
+
 const teamMembers = [
     {
         name: "राम बहादुर थापा",
         position: "प्रधानाध्यापक",
         phone: "९८५८०५०६१३",
-        image: "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
+        image: principal,
     },
     {
         name: "मनसुन दाहाल",
         position: "९–१२ कृषि कार्यक्रम संयोजक",
         phone: "९८४८१००३०४",
-        image: "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
+        image: agriculture,
+    },
+
+    {
+        name: "तेज बहादुर थापा",
+        position: "लेखापाल",
+        phone: "९८५८०६१७२०",
+        image: accounting,
     },
 ];
 
